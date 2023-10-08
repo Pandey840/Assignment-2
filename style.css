@@ -1,0 +1,139 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("./assets/images/contact_form_bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(1, 1, 52, 0.5);
+  z-index: -1;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgb(3, 3, 37);
+  z-index: 999;
+}
+
+.logo a {
+  text-decoration: none;
+}
+
+.sideNav ul li a {
+  color: white;
+}
+
+.contact-border {
+  box-shadow: 0px 0px 0px 2px rgb(5, 5, 86);
+  height: fit-content;
+  width: fit-content;
+}
+
+.contact-btn {
+  position: relative;
+  display: inline-flex;
+  padding: 10px 20px;
+  background: initial;
+  color: rgb(71, 71, 233);
+  align-items: center;
+  cursor: pointer;
+  border: none;
+  transition: all 0.2s linear 0s;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.contact-border:hover {
+  background-color: rgb(218, 233, 255);
+}
+
+.contact-section {
+  margin-top: 170px;
+}
+
+.form-border {
+  margin: 20px;
+  padding: 10px;
+  box-shadow: 0px 0px 0px 1px rgb(1, 1, 138);
+}
+
+.input-wrapper {
+  position: relative;
+}
+
+.input-wrapper input {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #3469cb;
+  padding: 10px 0;
+  font-size: 16px;
+  transition: border-color 0.3s, transform 0.3s;
+  outline: none;
+}
+
+.input-wrapper label {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  font-size: 16px;
+  color: #07098c;
+  transition: transform 0.3s, font-size 0.3s, color 0.3s;
+}
+
+.input-wrapper input:focus {
+  border-color: #007bff;
+}
+
+.input-wrapper input:focus + label {
+  transform: translateY(-20px);
+  color: #007bff;
+}
+
+textarea {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #3469cb;
+  padding: 50px 0;
+  font-size: 16px;
+  transition: border-color 0.3s, transform 0.3s;
+  outline: none;
+  height: 200px;
+  position: relative;
+}
+
+.msg {
+  position: relative;
+  top: -170px;
+  left: 0;
+  font-size: 16px;
+  color: #07098c;
+  transition: transform 0.3s, font-size 0.3s, color 0.3s;
+}
+textarea:focus {
+  border-color: #007bff;
+}
+
+textarea:focus + .msg {
+  transform: translateY(-20px);
+  color: #007bff;
+}
+
+footer {
+  background-color: rgb(0, 6, 24);
+}
